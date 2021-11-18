@@ -14,7 +14,7 @@ wp-content/*
 wp-content/mu-plugins/*
 wp-content/plugins/*
 wp-content/themes/*
-!themes/customtheme
+
 
 # ignore all files starting with . or ~
 .*
@@ -66,6 +66,7 @@ Thumbs.db
 !README.md
 !CHANGELOG.md
 !composer.json
+! docker-compose.yml
 
 # track favicon files, if they exist
 !android-chrome-*.png
@@ -82,4 +83,4 @@ Thumbs.db
 # add your own entries here
 !wp-content/mu-plugins/example-mu-plugin/
 !wp-content/plugins/example-plugin/
-!wp-content/themes/example-theme/
+!wp-content/themes/customtheme/
