@@ -66,7 +66,7 @@ Thumbs.db
 !README.md
 !CHANGELOG.md
 !composer.json
-! docker-compose.yml
+!docker-compose.yaml
 
 # track favicon files, if they exist
 !android-chrome-*.png
