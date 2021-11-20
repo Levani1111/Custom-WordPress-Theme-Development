@@ -8,7 +8,7 @@
             </div>                                                        <!-- Show a featured imag pages -->
         <?php endif; ?>
         <h1><?php the_title();?></h1>                                     <!-- Show a title pages -->
-        <?php get_template_part('includes/section', 'blogcontent'); ?>    <!-- Show a content pages -->
+        <?php get_template_part('includes/section', 'content'); ?>        <!-- Show a content pages -->
     </div>
 </section>
 

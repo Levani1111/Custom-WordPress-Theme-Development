@@ -28,4 +28,4 @@ foreach($categories as $category):?>
 <!-- comments Template off -->
 <?php // comments_template(); ?>
 
-<?php endwhile; endif; ?>
+<?php endwhile; else: endif; ?>
