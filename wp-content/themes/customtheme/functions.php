@@ -25,6 +25,7 @@ add_action( 'wp_enqueue_scripts', 'load_js' );
 // Theme options
 add_theme_support( 'menus' );              // Add menu support
 add_theme_support( 'post-thumbnails' );   // Add feature image support
+add_theme_support('widgets');             // Add widget support
 
 // Custom Image Sizes
 add_image_size( 'small-thumbnail', 180, 120, true );
@@ -41,6 +42,31 @@ register_nav_menus(
         'footer-menu' => 'Footer Menu Location',
     )
 );
+
+// register sidebars
+function my_sidebars() {
+    register_sidebar(
+        array(
+            'name' => 'Page Sidebar',
+            'id' => 'page-sidebar',
+            'before_widget' => '<div class="sidebar-module">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4>',
+            'after_title' => '</h4>'
+        )
+    );
+    register_sidebar(
+        array(
+            'name' => 'Blog Sidebar',
+            'id' => 'blog-sidebar',
+            'before_widget' => '<div class="sidebar-module">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4>',
+            'after_title' => '</h4>'
+        )
+    );
+}
+add_action( 'widgets_init', 'my_sidebars' );
 
 //  Export Pages View to a spreadsheet
 function func_export_all_posts() {
