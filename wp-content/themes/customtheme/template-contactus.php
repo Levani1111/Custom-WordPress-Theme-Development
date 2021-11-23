@@ -6,9 +6,9 @@ template name: Contact Us
 
 <?php get_header(); ?>
 
-<section class="page-wrap">
-    <div class="container">
-        <div class="row">
+<section class="page-wrap my-5 py-5">
+    <div class="container my-3 py-5">
+        <div class="row py-3 ml-5 px-5">
             <div class="col-md-12">
                 <h1><?php the_title();?></h1>
                 <div class="row">

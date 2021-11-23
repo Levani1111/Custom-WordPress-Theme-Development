@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<section class="page-wrap">
-    <div class="container">
-        <section class="row">
+<section class="page-wrap py-5">
+    <div class="container py-5">
+        <section class="row py-5">
             <div class="col-lg-3">
                 <?php if(is_active_sidebar('page-sidebar')): ?>                      <!-- is_active_sidebar() checks if the sidebar is active -->
                     <?php dynamic_sidebar('page-sidebar'); ?>                        <!-- dynamic_sidebar() displays the sidebar -->

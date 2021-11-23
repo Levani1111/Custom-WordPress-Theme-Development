@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<section class="page-wrap">
-    <div class="container">
+<section class="page-wrap my-5 py-5">
+    <div class="container my-5 py-5">
         <!-- Show a featured imag posts -->
         <?php if (has_post_thumbnail()) : ?>                              <!-- Show a featured imag posts -->
-            <div class="img-fluid mb-3 img-thumbnails">                   <!-- Show a featured imag posts -->
+            <div class="img-fluid mb-3 img-thumbnails py-5">              <!-- Show a featured imag posts -->
                 <?php the_post_thumbnail('banner-image'); ?>              <!-- Show a featured imag posts -->
             </div>
         <?php endif; ?>
