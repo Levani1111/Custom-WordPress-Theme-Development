@@ -23,4 +23,5 @@ template name: Contact Us
         </div>
     </div>
 </section>
+
 <?php get_footer(); ?>

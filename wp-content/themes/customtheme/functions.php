@@ -34,6 +34,7 @@ add_image_size( 'blog-image', 400, 400, true );
 add_image_size( 'blog-image-small', 300, 200, true );
 add_image_size( 'blog-image-large', 800, 400, true );
 
+
 // Menus
 register_nav_menus(
     array(

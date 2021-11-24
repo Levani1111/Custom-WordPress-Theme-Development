@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-
-<section class="page-wrap my-5 py-5">
-    <div class="container my-5 py-5">
+<!-- display posts -->
+<section class="page-wrap my-1 py-5">
+    <div class="container my-1 py-5">
         <!-- Show a featured imag posts -->
         <?php if (has_post_thumbnail()) : ?>                              <!-- Show a featured imag posts -->
             <div class="img-fluid mb-3 img-thumbnails py-5">              <!-- Show a featured imag posts -->
