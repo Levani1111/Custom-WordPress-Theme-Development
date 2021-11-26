@@ -10,7 +10,7 @@
             </div>
             <div class="col-lg-9">
                     <?php if (has_post_thumbnail()) : ?>                              <!-- Show a featured imag pages -->
-                <div class="img-fluid mb-3 img-thumbnails">                           <!-- Show a featured imag pages -->
+                <div class="img-fluid img-thumbnails mb-3">                           <!-- Show a featured imag pages -->
                     <?php the_post_thumbnail('banner-image'); ?>                      <!-- Show a featured imag pages -->
                 </div>                                                                <!-- Show a featured imag pages -->
                     <?php endif; ?>

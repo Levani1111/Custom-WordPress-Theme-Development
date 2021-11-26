@@ -140,3 +140,8 @@ header .top-bar .sub-menu li .sub-menu {
     color: #0d6efd !important;
     background-color: rgb(252, 252, 252) !important;
 }
+
+/* Responsive img */
+img { 
+	width: 100%;
+}

@@ -27,6 +27,7 @@ add_theme_support( 'menus' );              // Add menu support
 add_theme_support( 'post-thumbnails' );   // Add feature image support
 add_theme_support('widgets');             // Add widget support
 
+
 // Custom Image Sizes
 add_image_size( 'small-thumbnail', 180, 120, true );
 add_image_size( 'banner-image', 1920, 210, true );
@@ -68,6 +69,20 @@ function my_sidebars() {
     );
 }
 add_action( 'widgets_init', 'my_sidebars' );
+
+// Custom login 
+function customtheme_custom_logo_setup() {
+    $defaults = array(
+        'height'               => 100,
+        'width'                => 400,
+        'flex-height'          => true,
+        'flex-width'           => true,
+        'header-text'          => array( 'site-title', 'site-description', 'tagline' ),
+        'unlink-homepage-logo' => false, 
+    );
+    add_theme_support( 'custom-logo', $defaults ); 
+ }
+ add_action( 'after_setup_theme', 'customtheme_custom_logo_setup' );
 
 //  Export Pages View to a spreadsheet
 function func_export_all_posts() {

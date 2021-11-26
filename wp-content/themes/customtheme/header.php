@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Customtheme</title>
 
     <?php wp_head(); ?>
 </head>
@@ -26,6 +26,12 @@
 				<nav class="navbar navbar-light">
 					<div class="container-fluid">
 						<div class="navbar-brand">
+                            <!-- Display custom site-title -->
+                          <?php 
+                           $site_title = get_bloginfo( 'title', 'display' );
+                            if ( $site_title || is_customize_preview() ) :?> 
+                            <h3 class="custom-site-title px-2"><?php echo $site_title; ?></h3> 
+                          <?php endif; ?>
 							<!-- Displaying the custom logo -->
 							<?php if ( function_exists( 'the_custom_logo' ) ) {
                             the_custom_logo();
