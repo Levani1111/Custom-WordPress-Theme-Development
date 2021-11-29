@@ -280,7 +280,7 @@ function create_post_type() {
             'name' => __( 'Cars' ),
             'singular_name' => __( 'Car' )
         ),
-        'hieraachical' => true,
+        'hierarchical' => true,
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-car',
