@@ -5,11 +5,10 @@
 function load_css() {
     wp_register_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all' );
     wp_enqueue_style( 'bootstrap' );
-  
-
+    
     wp_register_style( 'main', get_template_directory_uri() . '/css/main.css', array(), false, 'all' );
     wp_enqueue_style( 'main' );
-   
+    
 }
 add_action( 'wp_enqueue_scripts', 'load_css' );
 
@@ -78,7 +77,7 @@ function customtheme_custom_logo_setup() {
         'flex-height'          => true,
         'flex-width'           => true,
         'header-text'          => array( 'site-title', 'site-description', 'tagline' ),
-        'unlink-homepage-logo' => false, 
+        'unlink-homepage-logo' => true, 
     );
     add_theme_support( 'custom-logo', $defaults ); 
  }
@@ -265,3 +264,45 @@ function hide_menu() {
     }
 }
 add_action('admin_head','hide_menu');
+
+// Identify External Links it not showing icons
+function add_this_script_footer(){ ?>
+    <script>
+        jQuery('a[href]:not([href*="' + (location.host.match(/([^.]+)\.\w{2,3}(?:\.\w{2})?$/) || [])[0] + '"])a[href*="$url"],a[href*=".org/"],a[href*=".com/"],a[href*=".ie/"],a[href*=".eu/"],a[href*=".net/"],a[href*=".io/"]:not(:has(img)):not(#emergency-message a):not( #navigation a)').append(' <i class="fa fa-external-link-alt fa-xs"></i>');
+    </script>
+<?php }
+add_action('wp_footer', 'add_this_script_footer');
+
+// custome post type for cars 
+function create_post_type() {
+    $args = array(
+        'labels' => array(
+            'name' => __( 'Cars' ),
+            'singular_name' => __( 'Car' )
+        ),
+        'hieraachical' => true,
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-car',
+        'supports' => array( 'title', 'editor', 'thumbnail'),
+        // 'rewrite' => array('slug' => 'my-cars'),
+    );
+    register_post_type( 'cars', $args);
+      
+}
+add_action( 'init', 'create_post_type' );
+
+// taxonomy for cars
+function create_taxonomy() {
+    $args = array(
+        'labels' => array(
+            'name' => __( 'Brands' ),
+            'singular_name' => __( 'Brand' )
+        ),
+        'hierarchical' => true,
+        'public' => true,
+       
+    );
+    register_taxonomy( 'brands', array('cars'), $args);
+}
+add_action( 'init', 'create_taxonomy' );

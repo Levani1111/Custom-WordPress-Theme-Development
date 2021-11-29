@@ -13,7 +13,7 @@
 <header class="header-top-1">
 <section class="container header-top-1">
 			<div class="container-fluid">
-				<nav class="navbar">
+				<nav class="navbar col-sm-9 mx-auto">
 					<div class="navbar-brand px-4"><span class="call-now">CALLUSNOW!</span>&nbsp;&nbsp;<span class="phone-number">385.154.11.28.35</span></div>
 					<sapn class="log-in">LOGIN</span>&nbsp;&nbsp;<span class="sign-up">SIGNUP</span>
 			    </nav>
@@ -22,7 +22,7 @@
 
 	<section class="header-top-2 py-2">
 		<div class="container py-2">
-			<div class="container-fluid">
+			<div class="container-fluid col-sm-9 mx-auto">
 				<nav class="navbar navbar-light">
 					<div class="container-fluid">
 						<div class="navbar-brand">
