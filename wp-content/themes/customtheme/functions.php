@@ -284,7 +284,7 @@ function create_post_type() {
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-car',
-        'supports' => array( 'title', 'editor', 'thumbnail'),
+        'supports' => array( 'title', 'editor', 'thumbnail',  'custom-fields'),
         // 'rewrite' => array('slug' => 'my-cars'),
     );
     register_post_type( 'cars', $args);

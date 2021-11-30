@@ -45,5 +45,6 @@ services:
       - wpcustomsite
 networks:
   wpcustomsite:
+  
 volumes:
   db_data:
