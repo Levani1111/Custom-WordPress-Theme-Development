@@ -39,7 +39,7 @@
 ## Custome Header 2
 --------------------------------------------------------------*/
 .header-top-2 {
-    background-color: rgb(233, 233, 233) !important;
+    background-color: rgba(0, 3, 184, 0.329) !important;
     /* width: 100%; */
     height: 100px;
 }
