@@ -15,12 +15,6 @@ wp-content/mu-plugins/*
 wp-content/plugins/*
 wp-content/themes/*
 
-# Recursively allow everything under the wp-content directory.
-# This is a security precaution.
-!/wp-content/*
-
-
-
 # ignore all files starting with . or ~
 .*
 ~*
@@ -91,4 +85,4 @@ Thumbs.db
 # add your own entries here
 !wp-content/mu-plugins/example-mu-plugin/
 !wp-content/plugins/example-plugin/
-!wp-content/themes/customtheme/
+!/wp-content/themes/customtheme/
