@@ -17,7 +17,7 @@ wp-content/themes/*
 
 # Recursively allow everything under the wp-content directory.
 # This is a security precaution.
-!/wp-content/**
+!/wp-content/*
 
 
 
