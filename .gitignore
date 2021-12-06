@@ -31,6 +31,9 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 *.komodoproject
+.project
+.classpath
+.idea/
 
 # ignore log files and databases
 *.log
@@ -83,4 +86,5 @@ Thumbs.db
 # add your own entries here
 !wp-content/mu-plugins/example-mu-plugin/
 !wp-content/plugins/example-plugin/
+!wp-content/themes/customtheme/
 
