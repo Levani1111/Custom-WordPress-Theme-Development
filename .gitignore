@@ -81,8 +81,23 @@ Thumbs.db
 !safari-pinned-tab.svg
 !site.webmanifest
 
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+uploads/
+/plugins/
+wp-content/
+
+
+
 # track these mu-plugins, plugins, and themes
 # add your own entries here
-!wp-content/mu-plugins/example-mu-plugin/
-!wp-content/plugins/example-plugin/
-!wp-content/themes/customtheme/
+# !wp-content/mu-plugins/example-mu-plugin/
+# !wp-content/plugins/example-plugin/
+# !wp-content/themes/customtheme/
