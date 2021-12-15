@@ -9,13 +9,13 @@
                     <?php dynamic_sidebar('blog-sidebar'); ?>                    
                 <?php endif; ?>                                                  
             </div>
-            <div>
+            <div class="col-lg-9">
                <h1><?php echo single_cat_title(); ?></h1>                        
                   <?php get_template_part('includes/section', 'archive'); ?> 
                   <div class="next-page">
-                      <?php previous_posts_link(); ?>
-                      <?php next_posts_link(); ?> 
-                  </div>                                    
+                    <?php previous_posts_link(); ?>
+                    <?php next_posts_link(); ?> 
+                  </div>                                                          
             </div>
         </section>
     </div>

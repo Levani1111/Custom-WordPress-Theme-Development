@@ -13,7 +13,7 @@ $lname = get_the_author_meta('last_name');
 $tags = get_the_tags(); 
 if($tags):
 foreach($tags as $tag):?> 
-    <a href="<?php echo get_tag_link($tag->term_id); ?>" class="badge badge-primary">
+    <a href="<?php echo get_tag_link($tag->term_id); ?>" class="badge bg-primary">
       <?php echo $tag->name;?>
     </a>
 <?php endforeach;?> 
@@ -21,7 +21,7 @@ foreach($tags as $tag):?>
 <?php 
 $categories = get_the_category();
 foreach($categories as $category):?>
-    <a href="<?php echo get_category_link($category->term_id); ?>" class="badge badge-primary"> 
+    <a href="<?php echo get_category_link($category->term_id); ?>" class="badge rounded-pill bg-success"> 
       <?php echo $category->name;?>
     </a>
 <?php endforeach; endif;?>

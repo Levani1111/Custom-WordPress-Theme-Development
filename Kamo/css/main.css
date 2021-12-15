@@ -39,7 +39,7 @@
 ## Custome Header 2
 --------------------------------------------------------------*/
 .header-top-2 {
-    background-color: rgba(0, 3, 184, 0.329) !important;
+    background-color: rgba(233, 233, 233, 0.992) !important;
     /* width: 100%; */
     height: 100px;
 }
@@ -121,7 +121,10 @@ header .top-bar .sub-menu li .sub-menu {
     left: 100%;
 }
 
-.badge {
+/*--------------------------------------------------------------
+## badge styling
+--------------------------------------------------------------*/
+ /* .badge {
     display: inline-block;
     padding: 0.35em 0.65em;
     font-size: .75em;
@@ -134,14 +137,40 @@ header .top-bar .sub-menu li .sub-menu {
     vertical-align: baseline;
     border-radius: 0.25rem;
     text-decoration: none;
-}
+} */
 
 .badge:hover {
     color: #0d6efd !important;
     background-color: rgb(252, 252, 252) !important;
+} 
+
+.badge {
+    text-decoration: none;
 }
 
-/* Responsive img */
+/*--------------------------------------------------------------
+## Responsive img
+--------------------------------------------------------------*/
+
 img { 
 	width: 100%;
 }
+
+/*--------------------------------------------------------------
+## Next/Prev button
+--------------------------------------------------------------*/
+
+.next-page > a {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 2;
+    color: rgb(252, 252, 252);
+    background-color:#0d6efd !important;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    text-decoration: none;
+  }

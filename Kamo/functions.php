@@ -28,9 +28,6 @@ add_theme_support('widgets');             // Add widget support
 
 
 // Custom Image Sizes
-add_image_size( 'small-thumbnail', 180, 120, true );
-add_image_size( 'banner-image', 1920, 210, true );
-add_image_size( 'blog-image', 400, 400, true );
 add_image_size( 'blog-image-small', 300, 200, true );
 add_image_size( 'blog-image-large', 800, 400, true );
 

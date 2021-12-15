@@ -49,8 +49,8 @@ services:
       wp core install --path="/var/www/html" --url="http://localhost" --title="Kamo" --admin_user=admin --admin_password=admin --admin_email=admin@admin.admin --skip-email;
       wp theme activate Kamo;
       wp plugin delete hello akismet;
-      wp theme delete twentyseventeen twentynineteen twentytwenty TwentyTwenty-One;
-      wp plugin install disable-comments;
+      wp theme delete twentyseventeen twentynineteen twentytwenty Twenty-Twenty-One;
+      wp plugin install disable-comments advanced-custom-fields  --activate;
       wp plugin activate --all;
       wp widget reset --all;
       wp option update timezone_string "America/New_York";
