@@ -1,1 +1,1 @@
-# custom-wordpress-site :art: :gear:
+# Theme Kamo :art: :gear:
