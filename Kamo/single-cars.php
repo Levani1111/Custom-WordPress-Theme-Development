@@ -13,7 +13,7 @@
         <?php
 			$gallery = get_field('gallery');
 				if($gallery):?>
-        <div class="gallery px-5">
+        <div class="gallery ">
             <?php foreach($gallery as $image):?>
             <a href="<?php echo $image['sizes']['blog-large'];?>">
                 <img src="<?php echo $image['sizes']['blog-small'];?>" class="img-fluid img-thumbnail">
@@ -36,19 +36,7 @@
                         Registration: <?php the_field('registration');?>
                     </li>
                 </ul>
-                <h3 class="px-3">Features</h3>
-                <ul>
-                    <?php if(have_rows('features')):?>
-                    <?php
-						while( have_rows('features')): the_row();
-						$feature = get_sub_field('feature');
-						?>
-                    <li>
-                        <?php echo $feature;?>
-                    </li>
-                    <?php endwhile;?>
-                    <?php endif;?>
-                </ul>
+                
             </div>
         </div>
     </div>
