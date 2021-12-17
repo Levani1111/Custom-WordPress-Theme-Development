@@ -6,12 +6,12 @@
 ![AJAX Form](https://img.shields.io/badge/AJAX-Form-blue)
 
 
-- :small_orange_diamond:  Wordpress Nonces
-- :small_orange_diamond:  Wordpress AJAX Form
-- :small_orange_diamond:  Magnific Popup
-- :small_orange_diamond:  Wordpress Custom Post Type
-- :small_orange_diamond:  Wordpress Custom Taxonomy
-- :small_orange_diamond:  Wordpress Custom imgae size
-- :small_orange_diamond:  Wordpress Custom widgets
-- :small_orange_diamond:  Wordpress Custom Search
-- :small_orange_diamond:  Wordpress Custom logo
+- :hammer_and_wrench:  Wordpress Nonces
+- :hammer_and_wrench:  Wordpress AJAX Form
+- :hammer_and_wrench:  Magnific Popup
+- :hammer_and_wrench:  Wordpress Custom Post Type
+- :hammer_and_wrench:  Wordpress Custom Taxonomy
+- :hammer_and_wrench:  Wordpress Custom imgae size
+- :hammer_and_wrench:  Wordpress Custom widgets
+- :hammer_and_wrench:  Wordpress Custom Search
+- :hammer_and_wrench:  Wordpress Custom logo
