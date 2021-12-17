@@ -8,7 +8,7 @@
             <!-- Show a featured imag posts -->
             <div class="img-fluid img-thumbnails mb-3 py-5">
                 <!-- Show a featured imag posts -->
-                <?php the_post_thumbnail('banner-image'); ?>
+                <?php the_post_thumbnail('blog-medium'); ?>
                 <!-- Show a featured imag posts -->
             </div>
             <?php endif; ?>

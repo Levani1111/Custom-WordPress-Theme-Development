@@ -45,6 +45,7 @@ add_theme_support('widgets');             // Add widget support
 // Custom Image Sizes
 add_image_size( 'blog-image-small', 300, 200, true );
 add_image_size( 'blog-large', 800, 600, true );
+add_image_size( 'blog-medium', 400, 300, true );
 
 // Menus
 register_nav_menus(
