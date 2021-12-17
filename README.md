@@ -6,4 +6,4 @@
 ![AJAX Form](https://img.shields.io/badge/AJAX-Form-blue)
 
 
-√ Wordpress Nonces
+:small_orange_diamond:  Wordpress Nonces
