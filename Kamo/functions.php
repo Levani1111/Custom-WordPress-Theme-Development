@@ -30,8 +30,9 @@ function load_js() {
 
     // load custom js
     wp_enqueue_script( 'jquery' );
-    wp_register_script( 'cudtom', get_template_directory_uri() . '/js/custom.js', 'jquery', false, true );
-    wp_enqueue_script( 'cudtom' );
+    wp_register_script( 'custom', get_template_directory_uri() . '/js/custom.js', 'jquery', false, true );
+    wp_enqueue_script( 'custom' );
+
 }
 add_action( 'wp_enqueue_scripts', 'load_js' );
 
@@ -316,3 +317,51 @@ function create_taxonomy() {
     register_taxonomy( 'brands', array('cars'), $args);
 }
 add_action( 'init', 'create_taxonomy' );
+
+// Manipulate the data that's been posted enquiry form.
+function enquiry_form() {
+    $formdata = [];
+        
+    wp_parse_str($_POST['enquiry'], $formdata);
+
+    // Admin email.
+    $admin_email = get_option('admin_email');
+
+    // Email headers.
+    $headers[] = 'content-type: text/html; charset=UTF-8';
+    $headers[] = 'From: ' . $admin_email;
+    $headers[] = 'Reply-To: ' . $formdata['email'];
+    // $headers[] = 'cc: ' . $admin_email['email'];
+
+    // Who are we sending the email to?
+    $send_to = $admin_email;
+
+    // Subject line.
+    $subject = 'Enquiry from ' . $formdata['fname'] .' '. $formdata['lname'];
+
+    // Message body.
+    $message = '';
+
+    foreach ($formdata as $index => $field) 
+    {
+        $message .= '<strong>' . $index . '</strong>: ' . $field . '<br />';
+    }
+
+    try { 
+        if(wp_mail($send_to, $subject, $message, $headers ) ) 
+        {
+            wp_send_json_success( 'Emial sent' );
+        }
+        else
+        {
+            wp_send_json_error( 'Email not sent' );
+        }
+        
+    } catch (Exception $e) {
+        wp_send_json_error( $e->getMessage() );
+    }
+    
+    wp_send_json_success( $formdata['fname'] );
+}
+add_action( 'wp_ajax_enquiry', 'enquiry_form' );
+add_action( 'wp_ajax_nopriv_enquiry', 'enquiry_form' );
