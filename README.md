@@ -16,7 +16,7 @@
 - :hammer_and_wrench:  Wordpress Custom Search
 - :hammer_and_wrench:  Wordpress Custom logo
 
-|  |   |  
+| :gear: |FEATURES   |  
 |---|---|
 |:hammer_and_wrench:   |Wordpress Nonces   |   
 |:hammer_and_wrench:   |Wordpress AJAX Form   |  
