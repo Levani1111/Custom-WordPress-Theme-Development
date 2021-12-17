@@ -2,4 +2,4 @@
 
 ## FEATURES
 
-Magnific Popup: Responsive jQuery Lightbox Plugin https://dimsemenov.com/plugins/magnific-popup/
+![Magnific Popup](https://img.shields.io/badge/Magnific-Popup-green)
