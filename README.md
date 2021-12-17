@@ -17,6 +17,7 @@
 - :hammer_and_wrench:  Wordpress Custom logo
 
 
+|---|---|---|---|---|
 |:hammer_and_wrench:   |Wordpress Nonces   |   
 |:hammer_and_wrench:   |Wordpress AJAX Form   |  
 |:hammer_and_wrench:   |Magnific Popup   |   
