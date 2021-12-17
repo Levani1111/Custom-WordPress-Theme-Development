@@ -1,4 +1,5 @@
 <div id="success_message" class="alert alert-primary" style="display:none"></div>
+
 <form id="enquiry">
     <h4>Send an Enquiry about <?php the_title();?></h4>
     <input type="hidden" name="registration" value="<?php the_field('registration');?>">
@@ -41,6 +42,7 @@
             var form = $('#enquiry').serialize();
             var formdata = new FormData;
             formdata.append('action', 'enquiry');
+            formdata.append('nonce', '<?php echo wp_create_nonce('ajax-nonce');?>');
             formdata.append('enquiry', form);
 
             $.ajax(endpoint, {
@@ -56,7 +58,7 @@
                      $('#enquiry').fadeIn(500);
                 },
                 error: function(err) {
-                    
+                    alert(err.responseJSON.data);
                 },
             })
 
