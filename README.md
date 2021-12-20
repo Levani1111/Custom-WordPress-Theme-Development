@@ -6,7 +6,7 @@
 ![Magnific Popup](https://img.shields.io/badge/Magnific-Popup-green)
 ![AJAX Form](https://img.shields.io/badge/AJAX-Form-blue)
 ![Bootstrap 5](https://img.shields.io/badge/5-Bootstrap-blueviolet)
-![CSS Build](https://img.shields.io/badge/SCSS-FFC0CB.svg)
+![CSS Build](https://img.shields.io/badge/SSS-FFC0CB.svg)
 ![SMTP Email](https://img.shields.io/badge/SMPT-Email-yellow)
 ![Sortcodes](https://img.shields.io/badge/Shortcodes-WordPress-blue)
 
