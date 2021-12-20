@@ -454,6 +454,14 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
   }
 }
 
+// Shortcodes
+function my_shortcode() {
+    ob_start();
+    get_template_part('includes/latest', 'cars');
+    return ob_get_clean();
+}
+add_shortcode('latest_cars', 'my_shortcode');
+
 /**
  * SMTP Override for Email Sending
  */
