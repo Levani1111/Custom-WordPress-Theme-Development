@@ -14,7 +14,8 @@
 |:hammer_and_wrench:   |WordPress Nonces   |  
 |:hammer_and_wrench:   |WordPress AJAX Form   | 
 |:hammer_and_wrench:   |Magnific Popup   | 
-|:hammer_and_wrench:   |Bootstrap   |    
+|:hammer_and_wrench:   |Bootstrap 5   |  
+|:hammer_and_wrench:   |Bootstrap 5 Nav Menu   |   
 |:hammer_and_wrench:   |WordPress Custom Post Type   |   
 |:hammer_and_wrench:   |WordPress Custom Taxonomy   |   
 |:hammer_and_wrench:   |WordPress Custom Imgae size   | 
