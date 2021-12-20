@@ -453,3 +453,24 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
     $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
   }
 }
+
+/**
+ * SMTP Override for Email Sending
+ */
+// function custom_mailer( PHPMailer $phpmailer ) {
+  
+//    $phpmailer->setFrom('admin@admin.admin.ho', 'Admin Admin');
+//    // host address which SMTO service are using
+//    $phpmailer->Host = 'admin@admin.admin.us-west-2.amazonaws.com';
+//    // post
+//    $phpmailer->Port = 000;
+//    // authentication type
+//    $phpmailer->SMTPAuth = true;
+//    // SMTP secure which is TLS
+//    $phpmailer->SMTPSecure = 'tls';
+//    // username & password
+//    $phpmailer->Username = 'SMTP_LOGIN';
+//    $phpmailer->Password = 'SMTP_PASSWORD';
+//    $phpmailer->IsSMTP();
+// }
+// add_action('phpmailer_init', 'custom_mailer');
