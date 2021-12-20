@@ -55,6 +55,7 @@ services:
       wp widget reset --all;
       wp option update timezone_string "America/New_York";
       wp rewrite structure /%postname%/;
+      wp rewrite flush;
       wp config set DISALLOW_FILE_EDIT true --raw
       '
     # vstm: add shared volume
