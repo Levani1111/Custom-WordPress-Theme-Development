@@ -174,3 +174,22 @@ img {
     border-radius: 0.25rem;
     text-decoration: none;
   }
+/*--------------------------------------------------------------
+## pagination button style
+--------------------------------------------------------------*/
+.page-numbers {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px 0 0;
+    border: 1px solid #eee;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: 600;
+    }
+    
+.page-numbers.current,
+    a.page-numbers:hover {
+     background: #f9f9f9;
+}
+    

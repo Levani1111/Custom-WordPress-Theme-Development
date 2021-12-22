@@ -46,6 +46,7 @@ add_theme_support('widgets');             // Add widget support
 add_image_size( 'blog-image-small', 300, 200, true );
 add_image_size( 'blog-large', 800, 600, true );
 add_image_size( 'blog-medium', 400, 300, true );
+add_image_size( 'blog-small', 150, 150, true );
 
 // Menus
 register_nav_menus(
@@ -461,6 +462,57 @@ function my_shortcode() {
     return ob_get_clean();
 }
 add_shortcode('latest_cars', 'my_shortcode');
+
+
+// Search Query
+function search_query() {
+    $paged = ( get_query_var('paged')  )  ? get_query_var('paged') : 1; 
+
+    $args = [
+        'paged' => $paged,
+        'post_type' => 'cars',
+        'posts_per_page' => 1,
+        'tax_query' => [],
+        'meta_query' => ['relation' => 'AND',],
+    ];
+    if(isset($_GET['keyword'])){
+        if(!empty($_GET['keyword'])){
+            $args['s'] = sanitize_text_field($_GET['keyword']);
+        }
+    }
+    if(isset($_GET['brand'])){
+        if(!empty($_GET['brand'])){
+            $args['tax_query'][] = [
+                'taxonomy' => 'brands',
+                'field' => 'slug',
+                'terms' => sanitize_text_field($_GET['brand']),
+            ];
+        }
+    }
+    if(isset($_GET['price_above'])){
+        if(!empty($_GET['price_above'])){
+            $args['meta_query'][] = [
+                'key' => 'price',
+                'value' => (int)sanitize_text_field($_GET['price_above']),
+                'type' => 'numeric',
+                'compare' => '>=',
+            ];
+        }
+    }
+    if(isset($_GET['price_below'])){
+        if(!empty($_GET['price_below'])){
+            $args['meta_query'][] = [
+                'key' => 'price',
+                'value' => (int)sanitize_text_field($_GET['price_below']),
+                'type' => 'numeric',
+                'compare' => '<=',
+            ];
+        }
+    }
+    return new WP_Query($args);
+}
+
+
 
 /**
  * SMTP Override for Email Sending
