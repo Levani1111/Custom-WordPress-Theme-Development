@@ -23,7 +23,8 @@
 
 <section class="page-wrap py-5 mt-5">
     <div class="container py-5">
-        <div class="card">
+         <h3 class="col-sm-9 mx-auto mb-5 text-center text-primary"><?php the_title();?></h3>
+        <div class="card col-sm-9 mx-auto">
             <div class="card-body">
                 <form action="<?php echo home_url('/car-search');?>">
                     <div class="form-group">
