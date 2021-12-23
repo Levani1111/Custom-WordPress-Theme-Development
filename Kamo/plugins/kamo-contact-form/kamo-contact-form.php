@@ -93,7 +93,7 @@
                     
                     $.ajax({
                         method: 'post',
-                        url: '<?php echo get_rest_url(null, 'kamo-contact-form/v1/send-message'); ?>',
+                        url: '<?php echo get_rest_url(null, 'kamo-contact-form/v1/send-email'); ?>',
                         headers: { 'X-WP-Nonce': nonce },
                         data: form,
                     })
@@ -106,14 +106,31 @@
         <?php }
 
         Public function register_rest_api(){
-            register_rest_route('kamo-contact-form/v1', 'send-message', array(
+            register_rest_route('kamo-contact-form/v1', 'send-email', array(
                 'methods' => 'POST',
                 'callback' => array($this, 'handle_contact_form'),
             ));
         }
 
         public function handle_contact_form($data) {
-            echo 'email sent it is working mama';
+            $headers = $data->get_headers();
+            $params = $data->get_params();
+            $nonce = $headers['x_wp_nonce'][0];
+
+            if(!wp_verify_nonce($nonce, 'wp_rest')){
+                return new WP_REST_Response('Message not sent', 422);
+            }
+
+            $post_id = wp_insert_post([
+                'post_type' => 'kamo_contact_form',
+                'post_title' => 'Contact enquiry',
+                'post_status' => 'publish',
+            ]);
+
+            if($post_id){
+                return new WP_REST_Response('Thank you for your email', 200);
+               
+            }
         }
     
 
