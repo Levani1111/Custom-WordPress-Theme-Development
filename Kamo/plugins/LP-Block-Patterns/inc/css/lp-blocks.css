@@ -1,0 +1,62 @@
+
+/** Pricing Table **/
+.wp-block-columns.pricing-table .wp-block-column {
+	border: 1px solid #000000;
+	margin-left: 0;
+	padding-bottom: 40px;
+}
+
+.wp-block-columns.pricing-table .wp-block-column ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wp-block-columns.pricing-table .wp-block-column ul li {
+	border-bottom: 1px solid #000000;
+	margin: 20px;
+}
+
+.wp-block-columns.pricing-table .wp-block-column:nth-child(2) ul li {
+	border-color: #FFFFFF
+}
+
+/** Contact Card **/
+.wp-block-group.contact-card {
+	border: 1px solid #666666;
+}
+
+.wp-block-group.contact-card p {
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px dotted #999999;
+}
+
+/** Contact Card **/
+.wp-block-group.contact-card {
+	border: 1px solid #666666;
+}
+
+.wp-block-group.contact-card p {
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px dotted #999999;
+}
+
+/** Masthead **/
+.wp-block-group.lil-masthead {
+	border-top: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+	padding: 10px;
+	font-family: Garamond, serif !important;
+}
+
+.wp-block-group.lil-masthead h1 {
+	font-family: Garamond, serif !important;
+}
+
+/** Hero Section **/
+.wp-block-cover.hero-section .wp-block-button a.wp-block-button__link:hover {
+	border-color: transparent !important;
+	color: #FFFFFF !important;
+}
