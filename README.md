@@ -26,5 +26,6 @@
 |:hammer_and_wrench:   |WordPress Custom Search   |   
 |:hammer_and_wrench:   |WordPress Custom Logo   |
 |:hammer_and_wrench:   |WordPress Custom Menu   |
+|:hammer_and_wrench:   |WordPress Custom Footer   |
 |:hammer_and_wrench:   |WordPress Custom SMTP Override for Email Sending   |
 |:hammer_and_wrench:   |WordPress Custom Shortcodes   |    
