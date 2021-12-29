@@ -22,7 +22,7 @@
 |:hammer_and_wrench:   |Bootstrap 5 Nav Menu   |    
 |:hammer_and_wrench:   |WordPress Custom Post Type   |   
 |:hammer_and_wrench:   |WordPress Custom Taxonomy   |   
-|:hammer_and_wrench:   |WordPress Custom Imgae size   | 
+|:hammer_and_wrench:   |WordPress Custom Images size   | 
 |:hammer_and_wrench:   |WordPress Custom Widgets   |   
 |:hammer_and_wrench:   |WordPress Custom Search   |   
 |:hammer_and_wrench:   |WordPress Custom Logo   |
