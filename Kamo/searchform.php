@@ -1,11 +1,11 @@
 
-<section class="page-wrap py-3">
-    <div class="row py-5">
+<section class="page-wrap">
+    <div class="row">
         <div class="d-flex align-items-center col-8 col-md-8 text-center text-md-left">
          <h1 class="Honepage-h1 py-3"><?php the_title();?></h1>
     </div>
 
-    <div class="col-md-4 pt-3 py-4">
+    <div class="col-md-4 pt-3">
         <div class="w-100 d-none d-md-block" style="margin-left: auto;">
             <form action="/" method="GET">
                 <div class="d-flex">
