@@ -30,3 +30,7 @@
 |:hammer_and_wrench:   |WordPress Custom Footer   |
 |:hammer_and_wrench:   |WordPress Custom SMTP Override for Email Sending   |
 |:hammer_and_wrench:   |WordPress Custom Shortcodes   |    
+
+<hr>
+
+###### Created by Levani Papashvili @2021
